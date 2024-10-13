@@ -1,0 +1,41 @@
+[
+  {
+    "title": "EmoGuessr",
+    "desc": "Jeu de déduction",
+    "img": "emoguessr",
+    "url": "https://emo-guessr.vercel.app/",
+    "repo": "https://github.com/impucky/emo-guessr",
+    "tags": ["next.js", "tailwind"]
+  },
+  {
+    "title": "Cant d'a Grana",
+    "desc": "Site pour une association de permaculture",
+    "img": "cantdagrana",
+    "url": "https://cantdagrana.fr",
+    "repo": "https://github.com/impucky/cant-da-grana-v2",
+    "tags": ["next.js", "tailwind", "storyblok"]
+  },
+  {
+    "title": "Musicales du Roubion",
+    "desc": "Site pour un festival de musique ancienne",
+    "img": "musicalesroubion",
+    "url": "https://lesmusicalesduroubion.fr",
+    "repo": "https://github.com/impucky/musicales-roubion",
+    "tags": ["next.js", "tailwind", "storyblok"]
+  },
+  {
+    "title": "100 days CSS",
+    "desc": "Petits projets en CSS (25/100)",
+    "img": "css100",
+    "url": "https://100dayscss.com/progress/impucky",
+    "tags": ["html", "css", "javascript"]
+  },
+  {
+    "title": "CinderMonkey",
+    "desc": "Planificateur pour un RPG",
+    "img": "cindermonkey",
+    "url": "https://cindermonkey.netlify.app",
+    "repo": "https://github.com/impucky/cindermonkey",
+    "tags": ["react"]
+  }
+]
