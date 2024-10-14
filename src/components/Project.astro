@@ -37,7 +37,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         ))
       }
     </div>
-    <div class="invisible flex flex-row group-hover:visible">
+    <div
+      class="invisible flex flex-row transition-all duration-300 group-hover:visible"
+    >
       <a
         href={data.url}
         aria-label={`Live demo for ${data.title}`}
