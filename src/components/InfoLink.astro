@@ -8,7 +8,7 @@ const { href, icon, tab } = Astro.props;
   <a
     href={href}
     target={tab ? "_blank" : ""}
-    class="flex items-center p-1 text-xl text-red-400 hover:text-red-200 hover:underline"
+    class="flex items-center p-1 text-xl text-red-400 hover:text-red-100 hover:underline"
   >
     <slot />
     {icon && <Icon class="ml-1 text-3xl" name={icon} />}
