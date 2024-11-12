@@ -1,0 +1,72 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import InfoLink from "../../components/InfoLink.astro";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import photo from "../../assets/photo.jpg";
+---
+
+<Layout title="Raphaël Beaugiraud">
+  <main class="flex h-full flex-col items-center justify-center text-gray-200">
+    <div class="flex items-center">
+      <Image
+        class="m-4 h-24 w-auto rounded-full drop-shadow-md sm:h-36"
+        src={photo}
+        alt="Photo Raphaël Beaugiraud"
+      />
+      <div>
+        <h1 class="text-2xl text-red-400 sm:text-4xl">Raphaël Beaugiraud</h1>
+        <h2 class="text-lg sm:text-xl">
+          Concepteur développeur d'applications
+        </h2>
+        <a class="mt-2 block" href="mailto:raphael.bgrd@gmail.com"
+          >raphael.bgrd@gmail.com</a
+        >
+      </div>
+    </div>
+    <div class="flex max-w-xl flex-col gap-2 text-center">
+      <p>
+        Je suis à la recherche d'une alternance pour une rentrée en mars 2025,
+        avec un rythme de 3 semaines en entreprise et 1 semaine en formation.
+      </p>
+      <p>
+        Je suis accompagné par l'organisme <a
+          href="https://simplon.co/"
+          target="_blank">Simplon</a
+        ><p>
+          → Chargée de formation: Leslie Bitene-Verrier - <a
+            href="mailto:lbitene@simplon.co">lbitene@simplon.co</a
+          >
+        </p>
+      </p>
+      <InfoLink href="/">Mon portfolio 🌞</InfoLink>
+      <InfoLink href="/cv_raphael_beaugiraud_2024.pdf" icon="download" tab
+        >Mon CV</InfoLink
+      >
+      <InfoLink
+        href="https://www.linkedin.com/in/raphael-beaugiraud/"
+        icon="linkedin"
+        tab>Linkedin</InfoLink
+      >
+      <InfoLink href="https://github.com/impucky/" icon="github" tab
+        >Github</InfoLink
+      >
+      <InfoLink href="/plaquette_simplon_cda_2025.pdf" icon="download" tab
+        >Plaquette de la formation</InfoLink
+      >
+      <InfoLink href="/calendrier_simplon_cda_2025.pdf" icon="download" tab
+        >Calendrier de la formation</InfoLink
+      >
+    </div>
+  </main>
+</Layout>
+
+<style>
+  a {
+    color: #f87171;
+    &:hover {
+      color: #fecaca;
+      text-decoration: underline;
+    }
+  }
+</style>
