@@ -3,29 +3,31 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header
-  class="sticky top-0 z-10 flex w-full justify-center bg-[#232634] shadow-md shadow-[#181926]"
+  class="wrap sticky top-0 z-10 flex w-full justify-center bg-[#232634] shadow-md shadow-[#181926]"
 >
   <div
     class="align-center flex w-full max-w-screen-lg flex-wrap justify-between"
   >
-    <div class="w-full p-2 text-center md:w-auto md:p-4 md:text-left">
-      <h1
-        class="text-nowrap text-3xl font-bold text-red-400 drop-shadow-md md:text-4xl"
-      >
+    <div class="w-full p-2 text-center md:w-3/6 md:p-4 md:text-left">
+      <h1 class="text-nowrap text-3xl font-bold text-red-400 md:text-4xl">
         Raphaël Beaugiraud
       </h1>
       <h2 class="text-xl font-semibold text-gray-100 md:text-2xl">
-        concepteur développeur d'applications
+        développeur web fullstack
       </h2>
     </div>
     <div
-      class="flex w-full items-center justify-center p-0 text-red-400 md:w-auto md:p-4"
+      class="flex w-full items-center justify-center p-0 text-center text-red-400 md:w-2/6 md:p-4"
     >
       <a
         href="/alternance"
-        class="p-2 text-lg font-bold underline hover:text-red-100 md:text-2xl"
-        >À PROPOS</a
+        class="p-2 text-lg font-bold underline hover:text-red-100 md:text-xl"
+        >À PROPOS / ALTERNANCE</a
       >
+    </div>
+    <div
+      class="flex w-full items-center justify-center p-0 text-red-400 md:w-1/6 md:p-4"
+    >
       <a
         href="https://github.com/impucky"
         aria-label="My Github page"
