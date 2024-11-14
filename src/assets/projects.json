@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fuzzy Fest",
+    "desc": "Carte pour découvrir des festivals de musique (WIP)",
+    "img": "fuzzyfest",
+    "url": "https://raphael-beaugiraud.dev/fuzzy-fest",
+    "repo": "https://github.com/impucky/fuzzy-fest",
+    "tags": ["react.js", "tailwind", "leaflet", "tina cms"]
+  },
+  {
     "title": "EmoGuessr",
     "desc": "Jeu de déduction",
     "img": "emoguessr",
@@ -36,6 +44,6 @@
     "img": "cindermonkey",
     "url": "https://cindermonkey.netlify.app",
     "repo": "https://github.com/impucky/cindermonkey",
-    "tags": ["react"]
+    "tags": ["react.js"]
   }
 ]
