@@ -1,5 +1,6 @@
 ---
 import IconLink from "./IconLink.astro";
+const pathname = Astro.url.pathname;
 ---
 
 <header
@@ -19,8 +20,8 @@ import IconLink from "./IconLink.astro";
     <div
       class="flex w-full items-center justify-center p-0 text-center text-red-400 lg:w-2/6 lg:justify-between lg:p-4"
     >
-      <IconLink href="/" active={Astro.url.pathname === "/"}>PROJETS</IconLink>
-      <IconLink href="/alternance" active={Astro.url.pathname === "/alternance"}
+      <IconLink href="/" active={pathname === "/"}>PROJETS</IconLink>
+      <IconLink href="/alternance" active={pathname === "/alternance"}
         >À PROPOS / ALTERNANCE</IconLink
       >
     </div>
