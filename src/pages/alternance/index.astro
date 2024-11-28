@@ -1,12 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import InfoLink from "../../components/InfoLink.astro";
+import Header from "../../components/Header.astro";
+import IconLink from "../../components/IconLink.astro";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import photo from "../../assets/photo.jpg";
 ---
 
 <Layout title="Raphaël Beaugiraud">
+  <Header />
   <main class="flex h-full flex-col items-center justify-center text-gray-200">
     <div
       class="flex w-full max-w-xl items-start justify-center p-2 sm:items-center"
@@ -16,13 +18,6 @@ import photo from "../../assets/photo.jpg";
         src={photo}
         alt="Photo Raphaël Beaugiraud"
       />
-      <div>
-        <h1 class="text-2xl text-red-400 sm:text-4xl">Raphaël Beaugiraud</h1>
-        <h2 class="text-lg sm:text-xl">développeur web fullstack</h2>
-        <a class="mt-2 block" href="mailto:raphael.bgrd@gmail.com"
-          >raphael.bgrd@gmail.com</a
-        >
-      </div>
     </div>
     <div class="flex max-w-xl flex-col gap-2 p-2 text-justify">
       <p class="text-center text-lg">Bonjour !</p>
@@ -43,26 +38,28 @@ import photo from "../../assets/photo.jpg";
           >
         </p>
       </p>
-      <InfoLink href="/">Mon portfolio 🌞</InfoLink>
-      <InfoLink
-        href="/cv_raphael_beaugiraud_alternance_cda.pdf"
-        icon="download"
-        tab>Mon CV</InfoLink
-      >
-      <InfoLink
-        href="https://www.linkedin.com/in/raphael-beaugiraud/"
-        icon="linkedin"
-        tab>LinkedIn</InfoLink
-      >
-      <InfoLink href="https://github.com/impucky/" icon="github" tab
-        >Github</InfoLink
-      >
-      <InfoLink href="/plaquette_simplon_cda_2025.pdf" icon="download" tab
-        >Plaquette de la formation</InfoLink
-      >
-      <InfoLink href="/calendrier_simplon_cda_2025.pdf" icon="download" tab
-        >Calendrier de la formation</InfoLink
-      >
+      <div class="flex w-full flex-col items-center">
+        <IconLink href="/">Mon portfolio 🌞</IconLink>
+        <IconLink
+          href="https://www.linkedin.com/in/raphael-beaugiraud/"
+          icon="linkedin"
+          tab>LinkedIn</IconLink
+        >
+        <IconLink href="https://github.com/impucky/" icon="github" tab
+          >Github</IconLink
+        >
+        <IconLink
+          href="/cv_raphael_beaugiraud_alternance_cda.pdf"
+          icon="download"
+          tab>Mon CV</IconLink
+        >
+        <IconLink href="/plaquette_simplon_cda_2025.pdf" icon="download" tab
+          >Plaquette de la formation</IconLink
+        >
+        <IconLink href="/calendrier_simplon_cda_2025.pdf" icon="download" tab
+          >Calendrier de la formation</IconLink
+        >
+      </div>
     </div>
   </main>
 </Layout>

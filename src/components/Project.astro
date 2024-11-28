@@ -1,8 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
-import { Icon } from "astro-icon/components";
+import IconLink from "./IconLink.astro";
 const { data, imgPath } = Astro.props;
+const { img, title, desc, url, repo, tags } = data;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.webp",
 );
@@ -13,8 +14,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 >
   <Image
     class="h-auto transition group-hover:brightness-[0.6]"
-    src={images[`/src/assets/${data.img}.webp`]()}
-    alt={data.title}
+    src={images[`/src/assets/${img}.webp`]()}
+    alt={title}
   />
 
   <div
@@ -25,12 +26,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     class="absolute flex h-full w-full translate-y-0 transform flex-col items-center justify-end gap-0 px-2 py-0 text-center opacity-100 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:gap-2 sm:py-4 md:translate-y-[15px] md:px-4 md:opacity-0"
   >
     <h3 class="text-xl font-bold text-white underline sm:text-2xl md:text-3xl">
-      {data.title}
+      {title}
     </h3>
-    <p class="mb-1 text-white">{data.desc}</p>
+    <p class="mb-1 text-white">{desc}</p>
     <div>
       {
-        data.tags.map((tag) => (
+        tags.map((tag) => (
           <span class="mx-1 rounded-xl bg-neutral-200 p-1 px-2 text-sm text-black shadow">
             {tag}
           </span>
@@ -40,24 +41,16 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     <div
       class="visible flex flex-row transition-all duration-300 group-hover:visible md:invisible"
     >
-      <a
-        href={data.url}
-        aria-label={`Live demo for ${data.title}`}
-        target="_blank"
-        class="p-2 text-red-400 transition-colors hover:text-white"
-      >
-        <Icon class="text-3xl md:text-4xl" name="link" />
-      </a>
+      <IconLink href={url} label={`Live demo for ${title}`} icon="link" tab />
+
       {
-        data.repo && (
-          <a
-            href={data.repo}
-            aria-label={`Github repository for ${data.title}`}
-            target="_blank"
-            class="p-2 text-red-400 transition-colors hover:text-white"
-          >
-            <Icon class="text-3xl md:text-4xl" name="github" />
-          </a>
+        repo && (
+          <IconLink
+            href={repo}
+            label={`Github repository for ${title}`}
+            icon="github"
+            tab
+          />
         )
       }
     </div>
