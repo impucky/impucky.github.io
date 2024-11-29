@@ -7,7 +7,7 @@ import projects from "../assets/projects.json";
 
 <Layout title="Raphaël Beaugiraud">
   <Header />
-  <main class="flex flex-col items-center p-8">
+  <main class="flex flex-col items-center overflow-y-auto p-8" tabindex="-1">
     {projects.map((p) => <Project data={p} />)}
   </main>
 </Layout>

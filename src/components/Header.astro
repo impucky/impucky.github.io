@@ -9,7 +9,7 @@ const pathname = Astro.url.pathname;
   <div
     class="align-center flex w-full max-w-screen-xl flex-wrap justify-between"
   >
-    <div class="w-full p-2 text-center md:p-4 lg:w-2/6 lg:text-left">
+    <div class="w-full p-2 text-center md:p-4 lg:w-fit lg:text-left">
       <h1 class="text-nowrap text-2xl font-bold text-red-400 md:text-3xl">
         Raphaël Beaugiraud
       </h1>
@@ -18,7 +18,7 @@ const pathname = Astro.url.pathname;
       </h2>
     </div>
     <div
-      class="flex w-full items-center justify-center p-0 text-center text-red-400 lg:w-2/6 lg:justify-between lg:p-4"
+      class="flex w-full items-center justify-center p-0 text-center text-red-400 lg:w-fit lg:justify-between lg:p-4"
     >
       <IconLink href="/" active={pathname === "/"}>PROJETS</IconLink>
       <IconLink href="/alternance" active={pathname.includes("alternance")}
@@ -26,7 +26,7 @@ const pathname = Astro.url.pathname;
       >
     </div>
     <div
-      class="flex w-full items-center justify-center p-0 text-red-400 lg:w-2/6 lg:p-4"
+      class="flex w-full items-center justify-center p-0 text-red-400 lg:w-fit lg:justify-end lg:p-4"
     >
       <IconLink
         href="https://github.com/impucky"

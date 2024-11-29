@@ -39,15 +39,6 @@ import photo from "../../assets/photo.jpg";
         </p>
       </p>
       <div class="flex w-full flex-col items-center">
-        <IconLink href="/">Mon portfolio 🌞</IconLink>
-        <IconLink
-          href="https://www.linkedin.com/in/raphael-beaugiraud/"
-          icon="linkedin"
-          tab>LinkedIn</IconLink
-        >
-        <IconLink href="https://github.com/impucky/" icon="github" tab
-          >Github</IconLink
-        >
         <IconLink
           href="/cv_raphael_beaugiraud_alternance_cda.pdf"
           icon="download"
@@ -67,8 +58,10 @@ import photo from "../../assets/photo.jpg";
 <style>
   a {
     color: #f87171;
-    &:hover {
-      color: #fee2e2;
+    transition: color 0.2s;
+    &:hover,
+    &:focus {
+      color: #fff;
       text-decoration: underline;
     }
   }
