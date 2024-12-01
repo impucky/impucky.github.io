@@ -3,7 +3,7 @@
     "title": "Fuzzy Fest",
     "desc": "Carte pour découvrir des festivals de musique",
     "img": "fuzzyfest",
-    "url": "https://raphael-beaugiraud.dev/fuzzy-fest",
+    "url": "https://fuzzyfest.live/",
     "repo": "https://github.com/impucky/fuzzy-fest",
     "tags": ["React", "Tailwind", "Leaflet", "Tina CMS", "Spotify API"]
   },
@@ -29,7 +29,7 @@
     "img": "musicalesroubion",
     "url": "https://lesmusicalesduroubion.fr",
     "repo": "https://github.com/impucky/musicales-roubion",
-    "tags": ["Next.js", "Tailwind", "Storyblok"]
+    "tags": ["Next.js", "Tailwind", "Storyblok CMS"]
   },
   {
     "title": "100 days CSS",
