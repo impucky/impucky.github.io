@@ -7,8 +7,8 @@ const { href, icon, label, tab, active } = Astro.props;
   href={href}
   aria-label={label}
   target={tab ? "_blank" : ""}
-  class={`p-2 text-lg font-bold transition-colors hover:text-white focus:text-white focus:underline hover:underline md:text-xl ${active ? "underline text-red-200" : "text-red-400 "}`}
+  class={`transition-colors hover:text-white focus:text-white focus:underline hover:underline md:text-xl ${active ? "underline text-gray-200" : "text-[salmon]"}`}
 >
   <slot />
-  {icon && <Icon class="inline text-3xl md:text-4xl" name={icon} />}
+  {icon && <Icon class="inline text-xl md:text-2xl" name={icon} />}
 </a>
