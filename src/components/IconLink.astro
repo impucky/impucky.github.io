@@ -10,5 +10,5 @@ const { href, icon, label, tab, active } = Astro.props;
   class={`transition-colors hover:text-white focus:text-white focus:underline hover:underline md:text-xl ${active ? "underline text-gray-200" : "text-[salmon]"}`}
 >
   <slot />
-  {icon && <Icon class="inline text-xl md:text-2xl" name={icon} />}
+  {icon && <Icon class="inline text-2xl" name={icon} />}
 </a>
