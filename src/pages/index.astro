@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Info from "../components/Info.astro";
 import Project from "../components/Project.astro";
 import projects from "../assets/projects.json";
 ---
@@ -8,9 +9,15 @@ import projects from "../assets/projects.json";
 <Layout title="Raphaël Beaugiraud">
   <Header />
   <main
-    class="mt-8 flex flex-col items-center bg-gradient-to-b from-[#1e1e2e] to-[#11111b] p-4 sm:p-8"
+    class="mt-4 flex flex-col items-center bg-gradient-to-b from-[#1e1e2e] to-[#11111b] p-4 sm:p-8"
     tabindex="-1"
   >
+    <Info />
+    <h2
+      class="mb-1 mt-4 w-full max-w-xl border-t-2 border-gray-600 py-6 text-center text-2xl tracking-wider text-[salmon] sm:text-3xl"
+    >
+      PROJETS
+    </h2>
     {projects.map((p) => <Project data={p} />)}
   </main>
 </Layout>
