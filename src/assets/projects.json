@@ -20,7 +20,6 @@
     "desc": "Site pour une association de permaculture",
     "img": "cantdagrana",
     "url": "https://cantdagrana.fr",
-    "repo": "https://github.com/impucky/cant-da-grana-v2",
     "tags": ["Next.js", "Tailwind", "Storyblok CMS"]
   },
   {
@@ -28,7 +27,6 @@
     "desc": "Site pour un festival de musique ancienne",
     "img": "musicalesroubion",
     "url": "https://lesmusicalesduroubion.fr",
-    "repo": "https://github.com/impucky/musicales-roubion",
     "tags": ["Next.js", "Tailwind", "Storyblok CMS"]
   },
   {
