@@ -5,45 +5,61 @@ import { Image } from "astro:assets";
 import photo from "../assets/photo.jpg";
 ---
 
-<div class="flex flex-col items-center px-2 text-gray-300">
-  <Image
-    class="h-24 w-auto rounded-full drop-shadow-md sm:h-24 md:h-28"
-    src={photo}
-    alt="Photo Raphaël Beaugiraud"
-  />
-  <div class="flex max-w-xl flex-col gap-2 p-2 text-justify text-sm sm:text-lg">
-    <p class="text-center text-lg">Bonjour !</p>
-    <p>
-      Je suis à la recherche d'une alternance pour un titre de <b
-        >Concepteur Développeur d'Applications</b
-      > à partir de <b>mars 2025</b>, pour <b>18 mois</b> avec un rythme de <b
-        >3 semaines en entreprise / 1 semaine en formation</b
-      >.
-    </p>
-    <p class="text-center">
-      Je suis accompagné par l'organisme <a
-        href="https://simplon.co/"
-        target="_blank">Simplon</a
-      ><p class="text-center">
-        Chargée de formation: <b>Leslie Bitene-Verrier</b><br /><a
-          href="mailto:lbitene@simplon.co">lbitene@simplon.co</a
-        >
-      </p>
-    </p>
-    <div class="mt-2 flex w-full flex-col items-center gap-2">
-      <IconLink
-        href="/cv_raphael_beaugiraud_alternance_cda.pdf"
-        icon="download"
-        tab>• Mon CV</IconLink
-      >
-      <IconLink href="/plaquette_simplon_cda_2025.pdf" icon="download" tab
-        >• Plaquette de la formation</IconLink
-      >
-      <IconLink href="/calendrier_simplon_cda_2025.pdf" icon="download" tab
-        >• Calendrier de la formation</IconLink
-      >
-    </div>
-  </div>
+<div
+  class="slide-enter-content flex max-w-screen-md flex-col items-start gap-1 text-left text-base"
+>
+  <p><b>Bonjour !</b></p>
+  <p>
+    Je suis développeur web fullstack avec une affinité pour le TypeScript, Node
+    et React.
+  </p>
+  <p>
+    Après un parcours autodidacte, du jQuery et les DOCTYPEs à rallonge des
+    années 2000 jusqu'au riche écosystème du web moderne, je souhaite
+    aujourd'hui concrétiser mes acquis dans le cadre d'un contrat de
+    professionnalisation.
+  </p>
+  <p>
+    Je recherche une entreprise pour préparer un titre
+    <b>Concepteur Développeur d'Applications</b> en alternance, pour <b
+      >18 mois</b
+    > à partir de
+    <b>mars 2025</b>.
+  </p>
+  <p>
+    Le rythme est de <b>3 semaines</b> en entreprise, <b>1 semaine </b>en
+    formation.
+  </p>
+  <p>
+    Je suis accompagné par l'organisme <a
+      href="https://simplon.co/"
+      title="Simplon.co"
+      target="_blank">Simplon</a
+    >.
+  </p>
+  <p>
+    Chargée de formation: <i>Leslie Bitene-Verrier</i> - <a
+      href="mailto:lbitene@simplon.co">lbitene@simplon.co</a
+    >
+  </p>
+  <IconLink
+    href="/cv_raphael_beaugiraud_alternance_cda.pdf"
+    icon="download"
+    label="Mon CV (pdf)"
+    tab>※ Mon CV</IconLink
+  >
+  <IconLink
+    href="/plaquette_simplon_cda_2025.pdf"
+    icon="download"
+    label="Plaquette de la formation (pdf)"
+    tab>※ Plaquette de la formation</IconLink
+  >
+  <IconLink
+    href="/calendrier_simplon_cda_2025.pdf"
+    icon="download"
+    label="Calendrier de la formation (pdf)"
+    tab>※ Calendrier de la formation</IconLink
+  >
 </div>
 
 <style>
@@ -55,5 +71,9 @@ import photo from "../assets/photo.jpg";
       color: #fff;
       text-decoration: underline;
     }
+  }
+  b {
+    color: #cdd6f4;
+    font-weight: 500;
   }
 </style>

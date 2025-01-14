@@ -4,20 +4,28 @@ import Header from "../components/Header.astro";
 import Info from "../components/Info.astro";
 import Project from "../components/Project.astro";
 import projects from "../assets/projects.json";
+import { Icon } from "astro-icon/components";
+import ScrollTopButton from "../components/ScrollTopButton.astro";
 ---
 
-<Layout title="Raphaël Beaugiraud">
+<Layout>
   <Header />
   <main
-    class="flex flex-col items-center bg-gradient-to-b from-[#1e1e2e] to-[#11111b] p-4 sm:p-8"
+    class="slide-enter-content w-fill flex flex-col items-center p-4 sm:p-12"
     tabindex="-1"
   >
     <Info />
-    <h2
-      class="mb-1 mt-4 w-full max-w-xl border-t-2 border-gray-600 py-6 text-center text-2xl tracking-wider text-[salmon] sm:text-3xl"
+    <div
+      class="projects flex w-full max-w-screen-md flex-col items-center"
+      style="--stagger: 14 !important;"
     >
-      PROJETS
-    </h2>
-    {projects.map((p) => <Project data={p} />)}
+      <h2
+        class="mb-1 mt-8 w-full max-w-screen-md py-6 text-center text-xl font-bold tracking-wider text-[salmon] sm:text-2xl"
+      >
+        ※ PROJETS ※
+      </h2>
+      {projects.map((p) => <Project data={p} />)}
+    </div>
   </main>
+  <ScrollTopButton />
 </Layout>
